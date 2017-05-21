@@ -6,6 +6,7 @@ module.exports = (req, res) => {
 
     if(hubMode && verifyTokenMatches) {
         res.status(200).send(hubChallenge);
+        console.log("Test");
     }
     else {
         res.status(403).end();
